@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function func1(qnum){
+      if (qnum == 1) {
+        ans = document.getElementById("q1ID").value;
+          if (ans == "3") {
+          document.getElementById("check1").value = "correct!!";
+        } else {
+          document.getElementById("check1").value = "incorrect ;(";
+        }
+      }
+      if (qnum == 2) {
+        ans = document.getElementById("q2ID").value;
+        if (ans == "2") {
+          document.getElementById("check2").value = "correct!!";
+        } else {
+          document.getElementById("check2").value = "incorrect ;(";
+        }
+      }
+      if (qnum == 3) {
+        ans = document.getElementById("q3ID").value;
+        if (ans == "2") {
+          document.getElementById("check3").value = "correct!!";
+        } else {
+          document.getElementById("check3").value = "incorrect ;(";
+        }
+      }
+      if (qnum == 4) {
+        ans = document.getElementById("q4ID").value;
+        if (ans == "1") {
+          document.getElementById("check4").value = "correct!!";
+        } else {
+          document.getElementById("check4").value = "incorrect ;(";
+        }
+      }
+      if (qnum == 5) {
+        ans = document.getElementById("q5ID").value;
+        if (ans == "3") {
+          document.getElementById("check5").value = "correct!!";
+        } else {
+          document.getElementById("check5").value = "incorrect ;(";
+        }
+      }
+      if (qnum == 6) {
+        document.getElementById("check6").value = "correct!!";
+      }
+    event.preventDefault();
+    return false;
+    }
+    </script>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <img src="./resources/head.jpg" width="1500" height="400">
+  <title></title>
+</head>
+<body>
+  <div class = "relative">
+    <a class = "headButton" style="padding: 50px;"  href = "./index.html" title = "home Page">Home</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./reason.html" title = "reason Page">Why</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./scenario.html" title = "Scenario Page">Scenario</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./quiz.html" title = "quiz Page">Quiz</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./citation.html" title = "citation Page">Citation</a>
+
+  </div>  
+  <h1>A Little Quiz - Test your language skill!</h1>
+    <form id = "form1">
+      <h2> 1. "Tanketorsk" is ...? </h2>
+      <div class = "dropdown">      
+        <select id = "q1ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> A verb </option>
+        <option value="2"> An adverb </option>
+        <option value="3"> A none </option>
+        <option value="4"> An adjective </option>
+        <option value="5"> A UBC student who gets A+ for DANI 110 </option>
+        </select>
+        <p><button id = "submit" onclick="func1(1)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check1" size = "20" ></p>
+      </div>
+
+      <h2> 2. What is the indefinite singular form for "Tanketorsk"? </h2>
+      <div class = "dropdown">      
+        <select id = "q2ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> Et tanketorsk </option>
+        <option value="2"> En tanketorsk </option>
+        <option value="3"> A tanketorsk </option>
+        <option value="4"> There shouldn't be common and neuter in the world! </option>
+        </select>
+        <p><button id = "submit" onclick="func1(2)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check2" size = "20" ></p>
+      </div>
+
+      <h2> 3. What is the definite singular form for "Tanketorsk"? </h2>
+      <div class = "dropdown">      
+        <select id = "q3ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> Tanketorsket </option>
+        <option value="2"> Tanketorsken </option>
+        <option value="3"> Tanketorsk </option>
+        <option value="4"> You already told me about that in Q2! </option>
+        </select>
+        <p><button id = "submit" onclick="func1(3)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check3" size = "20" ></p>
+      </div>
+
+      <h2> 4. What is the indefinite plural form for "Tanketorsk"? </h2>
+      <div class = "dropdown">      
+        <select id = "q4ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> Tanketorsk </option>
+        <option value="2"> Tanketorske </option>
+        <option value="3"> Tanketorsker </option>
+        <option value="4"> Why can't it be "Tanketorsks"? </option>
+        </select>
+        <p><button id = "submit" onclick="func1(4)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check4" size = "20" ></p>
+      </div>
+
+      <h2> 5. What is the definite plural form for "Tanketorsk"? </h2>
+      <div class = "dropdown">      
+        <select id = "q5ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> Tanketorskrne </option>
+        <option value="2"> Tanketorskerne </option>
+        <option value="3"> Tanketorskene </option>
+        <option value="4"> "My brother has black spoons" - I wrote that in my quiz </option>
+        </select>
+        <p><button id = "submit" onclick="func1(5)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check5" size = "20" ></p>
+      </div>
+
+      <h2> 6. Is this a good website? </h2>
+      <div class = "dropdown">      
+        <select id = "q6ID" class = "dropdown">
+        <option value="0"> ---Choose an answer--- </option>
+        <option value="1"> Of course! </option>
+        <option value="2"> Definitely! </option>
+        <option value="3"> absolutely! </option>
+        <option value="4"> Insert your own joke or complaint please, I'm run out of mind... </option>
+        </select>
+        <p><button id = "submit" onclick="func1(6)">Submit</button></p>
+        <p> Your answer is: 
+          <input type = "text" id = "check6" size = "20" ></p>
+      </div>
+      </form>
+
+      <div>
+        <img src="./resources/good.jpg" class="center" width="500" height="430">
+      </div>
+</body>
+</html>

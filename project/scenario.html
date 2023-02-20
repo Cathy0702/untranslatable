@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function func(){
+            input = document.getElementById("write");
+            document.getElementById("display").value = document.getElementById("display").value + "\n" + input.value;
+            document.getElementById("write").value = "";
+            event.preventDefault();
+            return false;
+        }
+        function func2(){
+            document.getElementById("display").value = "";
+            event.preventDefault();
+            return false;
+        }
+        </script>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <img src="./resources/head.jpg" width="1500" height="400">
+  <title></title>
+</head>
+<body>
+  <div class = "relative">
+    <a class = "headButton" style="padding: 50px;"  href = "./index.html" title = "home Page">Home</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./reason.html" title = "reason Page">Why</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./scenario.html" title = "Scenario Page">Scenario</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./quiz.html" title = "quiz Page">Quiz</a>
+    <a class = "headButton" style="padding: 50px;"  href = "./citation.html" title = "citation Page">Citation</a>
+
+  </div>  
+
+  <div><h1>Scenarios</h1></div>
+  <div><h2>Have these ever happened in your life?</h2></div>
+
+  <div class = "textAfterCompound">
+    <h4>
+      Scenario 1
+    </h4>
+  </div>
+
+  <div>
+    <p class = "scenario">
+        You've just come home from the grocery store with a bucket of milk in one hand and your keys in the other. 
+        After changing your shoes you put the milk in the refrigerator, put the keys on the table, and go back to your bedroom.
+        Ten minutes later, you return to the kitchen and find the milk on the table and the keys in the fridge - you've got them backwards!
+        
+    </p>
+  </div>
+
+  <div class = "textAfterCompound">
+    <h4>
+      Scenario 2
+    </h4>
+  </div>
+
+  <div>
+    <p class = "scenario">
+        "Hvor var du i går aftes?" <br>
+        "Jeg studerede med Emily, mor." <br>
+        "Hvor har du købt de slik?" <br>
+        "Ah, bartenderen gav dem til mig." <br>
+    </p>
+  </div>
+
+  <div class = "textAfterCompound">
+    <h4>
+      Write your own scenario!
+    </h4>
+  </div>
+
+  <div>
+    <form >
+        <textarea name="write" id = "write" class = "write"></textarea>
+        <br>
+        <div class = "citation">
+            <button id = "submit" onclick="func()">Display</button>
+            <button id = "clear" onclick="func2()">Clear</button>
+        </div>
+        <br>
+        <textarea name="display" id = "display" class = "display" readonly>ex. Call your girlfriend by your ex's name (This is probably the worst thing I can ever think of...)</textarea>
+      </form> 
+  </div>
+
+  
+</body>
+</html>
